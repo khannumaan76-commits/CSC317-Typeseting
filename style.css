@@ -1,0 +1,189 @@
+/* I added these fonts for the page text and headings. */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Source+Serif+4:wght@400;700&display=swap");
+
+/* Original CSS from the starter file - kept the same. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+
+/* I set the base font size to 10px so rem sizes are easier to use. */
+html {
+  font-size: 10px;
+}
+
+/* I chose a serif font and added spacing to make the text easier to read. */
+body {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.08rem;
+}
+
+/* I used a different font for the headings so they stand out. */
+h1,
+h2 {
+  font-family: "Roboto Slab", Georgia, serif;
+  letter-spacing: 0.18rem;
+  line-height: 1.3;
+}
+/* I made the main college title bigger and centered it. */
+h1 {
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+/* I made the section headings smaller than the main title. */
+h2 {
+  font-size: 2.6rem;
+}
+
+/* I added more space above and below the main title. */
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* I indented the first paragraph after each heading in the section. */
+section h2 + p {
+  text-indent: 1.25rem;
+}
+
+/* I added some space between paragraphs. */
+p {
+  margin: 1.6rem 0;
+}
+
+/* I matched the link colors to the red borders on the page. */
+a:link {
+  color: #a66;
+  text-decoration: underline;
+}
+
+/* I gave links that have already been opened a darker color. */
+a:visited {
+  color: #805454;
+}
+
+/* I removed the underline and default outline on hover and focus. */
+a:hover,
+a:focus {
+  color: #804040;
+  text-decoration: none;
+  outline: none;
+}
+
+/* I made links change color when clicked. */
+a:active {
+  color: white;
+  background-color: #a66;
+  text-decoration: none;
+}
+
+/* I added the small icon beside links that go to other websites. */
+a[href^="http"] {
+  background-image: url("external-link-52.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}
+
+/* I gave the lists some spacing and moved them in from the left. */
+ul,
+ol {
+  margin: 1.6rem 0;
+  padding-left: 3rem;
+}
+
+/* I kept the list text spacing the same as the paragraphs. */
+li {
+  line-height: 1.5;
+}
+
+/* I used square bullets for the unordered lists. */
+ul {
+  list-style-type: square;
+}
+
+/* I removed the bullets and extra spacing from the navigation list. */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* I added space between each navigation item. */
+nav li {
+  margin: 0 0 1.6rem;
+}
+
+/* I made the navigation links look like vertical menu buttons */
+nav a:link,
+nav a:visited {
+  display: block;
+  padding: 1.6rem 0.6rem;
+  border: 1px solid #a66;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #a66;
+}
+
+/* I added a red background when hovering over a menu button */
+nav a:hover,
+nav a:focus {
+  background-color: #a66;
+  color: white;
+  outline: none;
+}
+
+/* I made the menu button darker while it is being clicked */
+nav a:active {
+  background-color: #804040;
+  color: white;
+}
